@@ -1,15 +1,23 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react';
 import { Routes, Route } from 'react-router-dom'
 import Home from './pages/Home.jsx'
 import About from './pages/About.jsx'
 import './index.css'
 import 'react-toastify/dist/ReactToastify.css';
 import NavBar from './components/NavBar.jsx'
+import Menu from './components/Menu.jsx';
+
 
 const App = () => {
+  const[menuOpen,setMenuOpen]= useState(false)
+  useEffect(() => {
+  console.log(menuOpen);
+  }, [menuOpen]);
+
   return (
     <div className="px-4 sm:px-[5vw] md:px-[7vw] lg:px-[9vw]">
-      <NavBar/>  
+      <NavBar menuOpen={menuOpen} setMenuOpen={setMenuOpen}/>  
+      <Menu menuOpen={menuOpen} setMenuOpen={setMenuOpen}/>
         <Routes>
           <Route path='/' element={<Home/>} />
           <Route path='/about' element={<About />} />
