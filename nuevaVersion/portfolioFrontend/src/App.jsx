@@ -10,9 +10,7 @@ import Menu from './components/Menu.jsx';
 
 const App = () => {
   const[menuOpen,setMenuOpen]= useState(false)
-  useEffect(() => {
-  console.log(menuOpen);
-  }, [menuOpen]);
+  
 
   return (
     <div className="px-4 sm:px-[5vw] md:px-[7vw] lg:px-[9vw]">
