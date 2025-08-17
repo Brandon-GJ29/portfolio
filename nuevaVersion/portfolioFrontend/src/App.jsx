@@ -7,6 +7,8 @@ import 'react-toastify/dist/ReactToastify.css';
 import NavBar from './components/NavBar.jsx'
 import { useTranslation } from "react-i18next";
 import "./i18n";
+import Profile from './pages/Profile.jsx';
+import Project from './pages/Project.jsx';
 
 
 const App = () => {
@@ -24,8 +26,10 @@ const App = () => {
       
       <div className="flex-1">
         <Routes>
-          <Route path='/' element={<Home darkMode={darkMode} t={t} i18n={i18n.language}  />} />
+          <Route path='/' element={<Home  t={t} i18n={i18n.language}  />} />
           <Route path='/about' element={<About />} />
+          <Route path='/profile' element={<Profile />} />
+           <Route path='/project/:projectId' element={<Project />} />
         </Routes>
       </div>
     </div>

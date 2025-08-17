@@ -63,7 +63,7 @@ const NavBar = ({ t, toggleLanguage, i18n}) => {
         <div className="flex flex-col p-6 gap-4 h-full">
           {/* <button onClick={() => setMenuOpen(false)} className="self-end font-bold text-lg sm:hidden">X</button>*/}
           <Link onClick={() => setMenuOpen(false)} to="/" className="py-2 text-lg sm:text-base">{t("home")}</Link> 
-          <Link onClick={() => setMenuOpen(false)} to="/about" className="py-2 text-lg sm:text-base">{t("profile")}</Link> 
+          <Link onClick={() => setMenuOpen(false)} to="/profile" className="py-2 text-lg sm:text-base">{t("profile")}</Link> 
           <Link onClick={() => setMenuOpen(false)} to="/about" className="py-2 text-lg sm:text-base">{t("about")}</Link> 
           <Link onClick={() => setMenuOpen(false)} to="/contact" className="py-2 text-lg sm:text-base">{t("contact")}</Link>
 
