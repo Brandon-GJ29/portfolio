@@ -5,23 +5,31 @@ import About from './pages/About.jsx'
 import './index.css'
 import 'react-toastify/dist/ReactToastify.css';
 import NavBar from './components/NavBar.jsx'
-import Menu from './components/Menu.jsx';
+import { useTranslation } from "react-i18next";
+import "./i18n";
 
 
 const App = () => {
-  const[menuOpen,setMenuOpen]= useState(false)
-  
+  const [darkMode,setDarkMode] =useState(false)
+  const { t, i18n } = useTranslation();
+
+  const toggleLanguage = () => {
+    const newLang = i18n.language === "es" ? "en" : "es";
+    i18n.changeLanguage(newLang);
+  };
 
   return (
-    <div className="px-4 sm:px-[5vw] md:px-[7vw] lg:px-[9vw]">
-      <NavBar menuOpen={menuOpen} setMenuOpen={setMenuOpen}/>  
-      <Menu menuOpen={menuOpen} setMenuOpen={setMenuOpen}/>
+    <div className="h-screen w-screen flex flex-col bg-amber-400">
+      <NavBar darkMode={darkMode} setDarkMode={setDarkMode} t={t} i18n={i18n} toggleLanguage={toggleLanguage} />
+      
+      <div className="flex-1">
         <Routes>
-          <Route path='/' element={<Home/>} />
+          <Route path='/' element={<Home darkMode={darkMode} t={t} i18n={i18n.language}  />} />
           <Route path='/about' element={<About />} />
         </Routes>
-      
+      </div>
     </div>
+
   )
 }
 
