@@ -1,9 +1,25 @@
 {
   "presentacion": "Estudiante de Ingeniería en Computación en la UNAM y filmmaker en constante aprendizaje. Apasionado por la innovación, la disciplina y la creación de proyectos que combinan tecnología, arte y esfuerzo para generar un impacto positivo.",
-
   "home":"INICIO",
   "about":"ACERCA",
   "contact":"CONTACTAR",
-  "profile":"PERFIL PROFESSIONAL"
+  "profile":"PERFIL PROFESSIONAL",
+
+  "readmore":"Leer Mas",
+  "category":"Categoria",
+  "download":"Descargar",
+  
+  "name0":"Segmentación de Mastocitos",
+  "description0_1":"En este proyecto desarrollamos un sistema computacional para el análisis y segmentación de mastocitos en imágenes de patología, con el objetivo de facilitar su identificación y contribuir al diagnóstico clínico y la investigación biomédica. Reconocimos la importancia de estas células en procesos inflamatorios, alérgicos y en diversas enfermedades, por lo que buscamos automatizar su detección mediante técnicas de procesamiento digital de imágenes y modelos de aprendizaje profundo, reduciendo así el tiempo y los recursos necesarios en comparación con los métodos manuales.",
+  "description0_2":"Para llevarlo a cabo, trabajamos en varias etapas. Primero, realizamos el preprocesamiento de las imágenes mediante su redimensionamiento y estandarización. Posteriormente, utilizamos la herramienta Labelme para el etiquetado manual de mastocitos y la creación de máscaras binarias que sirvieron como base para el entrenamiento del modelo. Finalmente, implementamos la arquitectura U-Net, reconocida por su eficacia en aplicaciones biomédicas de segmentación, debido a su capacidad de extraer información contextual y generar delimitaciones precisas incluso en escenarios con conjuntos de datos reducidos.",
+  "description0_3":"Los resultados obtenidos mostraron que nuestro modelo fue capaz de generar máscaras de segmentación y superponer contornos sobre las imágenes originales, lo que permitió validar visualmente las predicciones y obtener representaciones claras de los mastocitos.",
+
+
+
+  "description1_1":"Hola esta es una breve description",
+
+
+  "description2_1":"Hola esta es una breve description"
+
 
 }

@@ -3,6 +3,20 @@
   "home":"HOME",
   "about":"ABOUT",
   "contact":"CONTACT",
-  "profile":"PROFESSIONAL PROFILE"
+  "profile":"PROFESSIONAL PROFILE",
+
+  "readmore":"Read More",
+  "category":"Category",
+  "download":"Download",
+  "name0":"Mast Cell Segmentation",
+  "description0_1": "In this project, we developed a computational system for the analysis and segmentation of mast cells in pathology images, aiming to facilitate their identification and contribute to clinical diagnosis and biomedical research. We recognized the significance of these cells in inflammatory and allergic processes, as well as in various diseases, so we sought to automate their detection using digital image processing techniques and deep learning models, thereby reducing the time and resources required compared to manual methods.",
+  "description0_2": "To accomplish this, we worked in several stages. First, we preprocessed the images through resizing and standardization. Next, we used the Labelme tool for manual mast cell annotation and the creation of binary masks that served as the basis for model training. Finally, we implemented the U-Net architecture, well-known for its effectiveness in biomedical segmentation applications due to its ability to extract contextual information and produce precise delineations even with limited datasets.",
+  "description0_3": "The results showed that our model was capable of generating segmentation masks and overlaying contours on the original images, allowing for visual validation of predictions and providing clear representations of the mast cells.",
+
+  
+  
+  
+  "description1_1":"Hello this is a little description",
+  "description2_1":"Hello this is a little description"
   
 }

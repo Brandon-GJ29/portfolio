@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 
-function ProjectItemRight({ id, name, image }) {
+function ProjectItemRight({ id, name, image,category }) {
   // Para manejar varios images, mostramos la primera por defecto
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
@@ -22,7 +22,7 @@ function ProjectItemRight({ id, name, image }) {
       {/* Texto a la derecha */}
       <Link className="text-gray-700 cursor-pointer flex flex-col justify-center" >
         <p className="text-sm font-medium">{name}</p>
-        <p className="text-xs text-gray-500">({id})</p>
+        <p className="text-xs text-gray-500">{category[0]}</p>
       </Link>
     </div>
   );
